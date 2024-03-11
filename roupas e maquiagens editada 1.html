@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<title>Cerimonialista - Trajes e Maquiagens</title>
+</head>
+<body>
+
+<h2>Escolha seu Traje</h2>
+
+<h3>Trajes Femininos</h3>
+<select id="vestidos-femininos" onchange="mostrarImagem(this.value, 'feminino')">
+  <option value="">Selecione um Vestido:</option>
+  <option value="vestido1">Vestido Clássico longo</option>
+  <option value="vestido2">Vestido Moderno longo</option>
+  <option value="vestido3">Vestido Clássico curto</option>
+  <option value="vestido4">Vestido Moderno curto</option>
+</select>
+<div id="imagem-vestido-feminino"></div>
+
+<!-- Filtro para Trajes Masculinos -->
+<h3>Trajes Masculinos</h3>
+<select id="vestidos-masculinos" onchange="mostrarImagem(this.value, 'masculino')">
+  <option value="">Selecione um Traje:</option>
+  <option value="traje1">Terno Clássico</option>
+  <option value="traje2">Terno Moderno</option>
+</select>
+<div id="imagem-vestido-masculino"></div>
+
+<h2>Escolha sua Maquiagem</h2>
+<!-- Opções de Maquiagem -->
+<label><input type="radio" name="maquiagem" value="simples"> Simples</label>
+<label><input type="radio" name="maquiagem" value="glamourosa"> Glamourosa</label>
+
+<script>
+// Função para mostrar as imagens dos vestidos selecionados
+function mostrarImagem(vestido, genero) {
+  var divImagem = genero === 'feminino' ? document.getElementById('imagem-vestido-feminino') : document.getElementById('imagem-vestido-masculino');
+  divImagem.innerHTML = ''; // Limpa as imagens anteriores
+  if (vestido) {
+    // Adiciona as imagens do vestido selecionado
+    var imagensVestidos = {
+      'vestido1': ['vestido1_frente', 'vestido1_costas', 'vestido1_detalhes'],
+      'vestido2': ['vestido2_frente', 'vestido2_costas', 'vestido2_detalhes'],
+      'vestido3': ['vestido3_frente', 'vestido3_costas', 'vestido3_detalhes'],
+      'vestido4': ['vestido4_frente', 'vestido4_costas', 'vestido4_detalhes']
+      // Adicione mais vestidos conforme necessário
+    };
+    
+    imagensVestidos[vestido].forEach(function(imagem) {
+      divImagem.innerHTML += '<img src="caminho/para/' + imagem + '.jpg" alt="Imagem do ' + imagem + '">';
+    });
+  }
+}
+</script>
+</script>
+
+</body>
+</html>
