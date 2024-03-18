@@ -15,6 +15,9 @@
   <option value="vestido2">Vestido Moderno longo</option>
   <option value="vestido3">Vestido Clássico curto</option>
   <option value="vestido4">Vestido Moderno curto</option>
+  <!-- Adicionando mais opções de vestidos -->
+  <option value="vestido5">Vestido Elegante longo</option>
+  <option value="vestido6">Vestido Casual curto</option>
 </select>
 <div id="imagem-vestido-feminino"></div>
 
@@ -24,6 +27,9 @@
   <option value="">Selecione um Traje:</option>
   <option value="traje1">Terno Clássico</option>
   <option value="traje2">Terno Moderno</option>
+  <!-- Adicionando mais opções de trajes masculinos -->
+  <option value="traje3">Terno Elegante</option>
+  <option value="traje4">Terno Casual</option>
 </select>
 <div id="imagem-vestido-masculino"></div>
 
@@ -31,6 +37,9 @@
 <!-- Opções de Maquiagem -->
 <label><input type="radio" name="maquiagem" value="simples"> Simples</label>
 <label><input type="radio" name="maquiagem" value="glamourosa"> Glamourosa</label>
+<!-- Adicionando mais opções de maquiagem -->
+<label><input type="radio" name="maquiagem" value="natural"> Natural</label>
+<label><input type="radio" name="maquiagem" value="dramatica"> Dramática</label>
 
 <script>
 // Função para mostrar as imagens dos vestidos selecionados
@@ -43,7 +52,10 @@ function mostrarImagem(vestido, genero) {
       'vestido1': ['vestido1_frente', 'vestido1_costas', 'vestido1_detalhes'],
       'vestido2': ['vestido2_frente', 'vestido2_costas', 'vestido2_detalhes'],
       'vestido3': ['vestido3_frente', 'vestido3_costas', 'vestido3_detalhes'],
-      'vestido4': ['vestido4_frente', 'vestido4_costas', 'vestido4_detalhes']
+      'vestido4': ['vestido4_frente', 'vestido4_costas', 'vestido4_detalhes'],
+      // Adicionando mais vestidos
+      'vestido5': ['vestido5_frente', 'vestido5_costas', 'vestido5_detalhes'],
+      'vestido6': ['vestido6_frente', 'vestido6_costas', 'vestido6_detalhes'],
       // Adicione mais vestidos conforme necessário
     };
     
@@ -53,7 +65,7 @@ function mostrarImagem(vestido, genero) {
   }
 }
 </script>
-</script>
 
 </body>
 </html>
+
