@@ -1,71 +1,74 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-<meta charset="UTF-8">
-<title>Cerimonialista - Trajes e Maquiagens</title>
+    <meta charset="UTF-8">
+    <title>Cerimonialista - Trajes e Maquiagens</title>
 </head>
 <body>
+    <h2>Escolha seu Traje</h2>
+    <h3>Trajes Femininos</h3>
+    <select id="vestidos-femininos" onchange="mostrarImagem(this.value, 'feminino')">
+        <option value="">Selecione um Vestido:</option>
+        <option value="vestido1">Vestido Clássico longo</option>
+        <option value="vestido2">Vestido Moderno longo</option>
+        <option value="vestido3">Vestido Clássico curto</option>
+        <option value="vestido4">Vestido Moderno curto</option>
+        <!-- Adicione mais opções de vestidos -->
+        <option value="vestido5">Vestido Elegante longo</option>
+        <option value="vestido6">Vestido Elegante curto</option>
+    </select>
+    <div id="imagem-vestido-feminino"></div>
 
-<h2>Escolha seu Traje</h2>
+    <h3>Trajes Masculinos</h3>
+    <select id="ternos-masculinos" onchange="mostrarImagem(this.value, 'masculino')">
+        <option value="">Selecione um Traje:</option>
+        <option value="terno1">Smoking</option>
+        <option value="terno2">Terno Escuro</option>
+        <option value="terno3">Terno Claro</option>
+        <!-- Adicione mais opções de ternos -->
+    </select>
+    <div id="imagem-terno-masculino"></div>
 
-<h3>Trajes Femininos</h3>
-<select id="vestidos-femininos" onchange="mostrarImagem(this.value, 'feminino')">
-  <option value="">Selecione um Vestido:</option>
-  <option value="vestido1">Vestido Clássico longo</option>
-  <option value="vestido2">Vestido Moderno longo</option>
-  <option value="vestido3">Vestido Clássico curto</option>
-  <option value="vestido4">Vestido Moderno curto</option>
-  <!-- Adicionando mais opções de vestidos -->
-  <option value="vestido5">Vestido Elegante longo</option>
-  <option value="vestido6">Vestido Casual curto</option>
-</select>
-<div id="imagem-vestido-feminino"></div>
+    <script>
+        // Função para mostrar as imagens dos vestidos ou ternos selecionados
+        function mostrarImagem(traje, genero) {
+            var divImagem = genero === 'feminino' ? document.getElementById('imagem-vestido-feminino') : document.getElementById('imagem-terno-masculino');
+            divImagem.innerHTML = ''; // Limpa as imagens anteriores
 
-<!-- Filtro para Trajes Masculinos -->
-<h3>Trajes Masculinos</h3>
-<select id="vestidos-masculinos" onchange="mostrarImagem(this.value, 'masculino')">
-  <option value="">Selecione um Traje:</option>
-  <option value="traje1">Terno Clássico</option>
-  <option value="traje2">Terno Moderno</option>
-  <!-- Adicionando mais opções de trajes masculinos -->
-  <option value="traje3">Terno Elegante</option>
-  <option value="traje4">Terno Casual</option>
-</select>
-<div id="imagem-vestido-masculino"></div>
-
-<h2>Escolha sua Maquiagem</h2>
-<!-- Opções de Maquiagem -->
-<label><input type="radio" name="maquiagem" value="simples"> Simples</label>
-<label><input type="radio" name="maquiagem" value="glamourosa"> Glamourosa</label>
-<!-- Adicionando mais opções de maquiagem -->
-<label><input type="radio" name="maquiagem" value="natural"> Natural</label>
-<label><input type="radio" name="maquiagem" value="dramatica"> Dramática</label>
-
-<script>
-// Função para mostrar as imagens dos vestidos selecionados
-function mostrarImagem(vestido, genero) {
-  var divImagem = genero === 'feminino' ? document.getElementById('imagem-vestido-feminino') : document.getElementById('imagem-vestido-masculino');
-  divImagem.innerHTML = ''; // Limpa as imagens anteriores
-  if (vestido) {
-    // Adiciona as imagens do vestido selecionado
-    var imagensVestidos = {
-      'vestido1': ['vestido1_frente', 'vestido1_costas', 'vestido1_detalhes'],
-      'vestido2': ['vestido2_frente', 'vestido2_costas', 'vestido2_detalhes'],
-      'vestido3': ['vestido3_frente', 'vestido3_costas', 'vestido3_detalhes'],
-      'vestido4': ['vestido4_frente', 'vestido4_costas', 'vestido4_detalhes'],
-      // Adicionando mais vestidos
-      'vestido5': ['vestido5_frente', 'vestido5_costas', 'vestido5_detalhes'],
-      'vestido6': ['vestido6_frente', 'vestido6_costas', 'vestido6_detalhes'],
-      // Adicione mais vestidos conforme necessário
-    };
-    
-    imagensVestidos[vestido].forEach(function(imagem) {
-      divImagem.innerHTML += '<img src="caminho/para/' + imagem + '.jpg" alt="Imagem do ' + imagem + '">';
-    });
-  }
-}
-</script>
-
+            // Adicione as imagens correspondentes aos vestidos ou ternos selecionados
+            if (genero === 'feminino') {
+                if (traje === 'vestido1') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/f1/fa/b8/f1fab89e46db755c278f9b83c6480eca.jpg" alt="Vestido Clássico longo">';
+                } else if (traje === 'vestido2') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/99/0e/5e/990e5ebeeb672896466d0aab46277730.jpg" alt="Vestido Moderno longo">';
+                    // ...
+                } else if (traje === 'vestido3') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/37/78/c7/3778c70324e1f49e2e7e77c164c0a37c.jpg" alt="Vestido Clássico curto">';
+                } else if (traje === 'vestido4') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/37/78/c7/3778c70324e1f49e2e7e77c164c0a37c.jpg" alt="Vestido Moderno curto">';
+                    // ...
+                }
+                // Adicione mais condições para outros vestidos
+            } else if (genero === 'masculino') {
+                if (traje === 'terno1') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/dc/32/ee/dc32ee7c083c1775fa640a2443210e5f.jpg" alt="Smoking">';
+                } else if (traje === 'terno2') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/af/10/fe/af10fefc32beefd10ceab364e7a03bc8.jpg" alt="Terno Escuro">';
+                    // ...
+                } else if (traje === 'terno3') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/f4/9f/00/f49f00d888d2d0279932e8b1c8e1ff60.jpg" alt="Terno Claro">';
+                }
+                // Adicione mais condições para outros ternos
+            }
+        }
+    </script>
+    <h2>Escolha sua Maquiagem</h2>
+    <!-- Opções de Maquiagem -->
+    <label><input type="radio" name="maquiagem" value="simples"> Simples</label>
+    <label><input type="radio" name="maquiagem" value="glamourosa"> Glamourosa</label>
+    <!-- Adicione mais opções de maquiagem -->
+    <label><input type="radio" name="maquiagem" value="natural"> Natural</label>
+    <label><input type="radio" name="maquiagem" value="dramatica"> Dramática</label>
 </body>
 </html>
 
