@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cerimonialista</title>
+<style>
+    body {
+        background-color: #f0f0f0; /* Cor de fundo */
+        color: #000000; /* Cor do texto */
+        border: 2px solid #000000; /* Adiciona borda ao redor da página */
+        margin: 10px; /* Adiciona margem ao redor da borda */
+        padding: 10px; /* Adiciona preenchimento dentro da borda */
+    }
+    img {
+        display: block; /* Torna a imagem um bloco */
+        margin-left: auto; /* Margem esquerda automática */
+        margin-right: auto; /* Margem direita automática */
+        border: 2px solid #ffc4e6; /* Adiciona borda ao redor da imagem */
+    }
+    h1 {
+        color: #ffc4e6; /* Cor do título */
+    }
+    ul {
+        list-style-type: none; /* Remove os marcadores da lista */
+        padding: 0; /* Remove o preenchimento padrão */
+    }
+    ul li {
+        margin-bottom: 10px; /* Adiciona espaço entre os botões */
+    }
+    ul li a {
+        text-decoration: none; /* Remove o sublinhado dos links */
+        background-color: #ff00b3; /* Cor de fundo dos botões */
+        color: white; /* Cor do texto dos botões */
+        padding: 10px 20px; /* Preenchimento ao redor do texto */
+        border: none; /* Remove a borda */
+        border-radius: 5px; /* Arredonda os cantos dos botões */
+        display: inline-block; /* Permite definir o padding */
+    }
+    ul li a:hover {
+        background-color: #faa2c7; /* Cor de fundo ao passar o mouse */
+    }
+</style>
+</head>
+
+<body> 
+    <img src="cerimonia.png" width="60%" alt="a imagem contém o slogan e o logotipo da empresa">
+    <h1>Adrielle Morini Freitas</h1>
+    <ul>
+        <li><a href="organização da festa editado 1.html">Organização da festa</a></li>
+        <li><a href="roupas e maquiagens editada 1.html">Roupas e maquiagens</a></li>
+        <li><a href="buffet.html">Buffet</a></li>
+        <li><a href="convidados.html">Convidados</a></li>
+        <li><a href="Fale conosco.html">Fale conosco</a></li>
+    </ul>
+</body>
+
+</html>
+
