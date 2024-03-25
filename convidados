@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,14 +20,12 @@
         }
     </style>
 </head>
-
 <body>
     <h1>Convidados</h1>
     <p>Seja bem-vindo à página de convidados! Aqui você encontrará informações importantes sobre a lista de convidados, RSVP e outras orientações.</p>
     <p>Para confirmar sua presença, clique no link abaixo:</p>
     <ul>
-        <li><a href="confirmar presença.html">Confirmar presença</a></li>
+        <li><a href="confirmarpresenca.html">Confirmar presença</a></li>
     </ul>
 </body>
-
 </html>
