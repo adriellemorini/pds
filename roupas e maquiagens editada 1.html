@@ -13,7 +13,6 @@
         <option value="vestido2">Vestido Moderno longo</option>
         <option value="vestido3">Vestido Clássico curto</option>
         <option value="vestido4">Vestido Moderno curto</option>
-        <!-- Adicione mais opções de vestidos -->
         <option value="vestido5">Vestido Elegante longo</option>
         <option value="vestido6">Vestido Elegante curto</option>
     </select>
@@ -25,30 +24,28 @@
         <option value="terno1">Smoking</option>
         <option value="terno2">Terno Escuro</option>
         <option value="terno3">Terno Claro</option>
-        <!-- Adicione mais opções de ternos -->
     </select>
     <div id="imagem-terno-masculino"></div>
 
     <script>
-        // Função para mostrar as imagens dos vestidos ou ternos selecionados
         function mostrarImagem(traje, genero) {
             var divImagem = genero === 'feminino' ? document.getElementById('imagem-vestido-feminino') : document.getElementById('imagem-terno-masculino');
-            divImagem.innerHTML = ''; // Limpa as imagens anteriores
-
-            // Adicione as imagens correspondentes aos vestidos ou ternos selecionados
+            divImagem.innerHTML = '';
             if (genero === 'feminino') {
                 if (traje === 'vestido1') {
                     divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/f1/fa/b8/f1fab89e46db755c278f9b83c6480eca.jpg" alt="Vestido Clássico longo">';
                 } else if (traje === 'vestido2') {
                     divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/99/0e/5e/990e5ebeeb672896466d0aab46277730.jpg" alt="Vestido Moderno longo">';
-                    // ...
                 } else if (traje === 'vestido3') {
                     divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/37/78/c7/3778c70324e1f49e2e7e77c164c0a37c.jpg" alt="Vestido Clássico curto">';
                 } else if (traje === 'vestido4') {
-                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/37/78/c7/3778c70324e1f49e2e7e77c164c0a37c.jpg" alt="Vestido Moderno curto">';
-                    // ...
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/736x/b6/35/20/b635207dc0a816617214942497178a3f.jpg" alt="Vestido Moderno curto">';
                 }
-                // Adicione mais condições para outros vestidos
+                else if (traje === 'vestido5') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/1a/90/3f/1a903f07aaa5dda692c468d3a0c24757.jpg" alt="Vestido Elegante longo">';
+                } else if (traje === 'vestido6') {
+                    divImagem.innerHTML = '<img src="https://i.pinimg.com/736x/f1/a6/79/f1a679c2dc8b35c9bbb5c03160acf2cf.jpg" alt="Vestido Elegante curto">';
+                }
             } else if (genero === 'masculino') {
                 if (traje === 'terno1') {
                     divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/dc/32/ee/dc32ee7c083c1775fa640a2443210e5f.jpg" alt="Smoking">';
@@ -58,17 +55,15 @@
                 } else if (traje === 'terno3') {
                     divImagem.innerHTML = '<img src="https://i.pinimg.com/564x/f4/9f/00/f49f00d888d2d0279932e8b1c8e1ff60.jpg" alt="Terno Claro">';
                 }
-                // Adicione mais condições para outros ternos
             }
         }
     </script>
     <h2>Escolha sua Maquiagem</h2>
-    <!-- Opções de Maquiagem -->
     <label><input type="radio" name="maquiagem" value="simples"> Simples</label>
     <label><input type="radio" name="maquiagem" value="glamourosa"> Glamourosa</label>
-    <!-- Adicione mais opções de maquiagem -->
     <label><input type="radio" name="maquiagem" value="natural"> Natural</label>
     <label><input type="radio" name="maquiagem" value="dramatica"> Dramática</label>
 </body>
 </html>
+
 
