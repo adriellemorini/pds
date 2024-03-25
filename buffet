@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Buffet - Cerimonialista</title>
 <link rel="stylesheet" href="estilos.css">
 </head>
-
 <body>
     <h1>Buffet de Casamento</h1>
     <p>Escolha o cardápio perfeito para tornar seu dia especial inesquecível.</p>
@@ -36,46 +34,40 @@
             <label for="entrada3">Selecionar</label>
         </article>
     </section>
-    
-
     <section id="jantares">
         <h2>Jantares</h2>
         <article class="opcao">
             <h3>Jantar Italiano</h3>
             <p>Desfrute de uma seleção de massas frescas, molhos caseiros e queijos finos.</p>
-            <img src="https://i.pinimg.com/564x/41/59/2d/41592da66bda14c7ddc69d5f7a60504d.jpg" alt="Jantar Italiano">
+            <img src="https://i.pinimg.com/564x/41/59/2d/41592da66bda14c7ddc69d5f7a60504d.jpg" alt="Jantar Italiano" style="width: 200px;">>
             <input type="radio" id="jantarItaliano" name="jantar">
             <label for="jantarItaliano">Selecionar</label>
         </article>
-        <!-- Adicione mais opções de jantares aqui -->
     </section>
     <section id="jantares">
         <h2>Jantares</h2>
         <article class="opcao">
             <h3>Jantar frutos do mar </h3>
             <p>Desfrute de uma seleção de massas frescas, molhos caseiros e queijos finos.</p>
-            <img src="https://i.pinimg.com/564x/9d/df/0a/9ddf0a2ec427ac79ac2c4ddfaea95371.jpg" alt="Jantar Italiano">
+            <img src="https://i.pinimg.com/564x/9d/df/0a/9ddf0a2ec427ac79ac2c4ddfaea95371.jpg" alt="Jantar Italiano" style="width:200px;">
             <input type="radio" id="jantarfrutos do mar" name="jantar">
             <label for="jantarfrutosdomar">Selecionar</label>
         </article>
-        <!-- Adicione mais opções de jantares aqui -->
     </section>
-
     <section id="bebidas">
         <h2>Bebidas</h2>
         <article class="opcao">
             <h3>Open Bar Clássico</h3>
             <p>Uma seleção de coquetéis tradicionais, cervejas artesanais e destilados premium.</p>
-            <img src="https://i.pinimg.com/736x/83/7a/f4/837af4237307598daec83cabce82092a.jpg" alt="Open Bar Clássico">
+            <img src="https://i.pinimg.com/736x/83/7a/f4/837af4237307598daec83cabce82092a.jpg" alt="Open Bar Clássico" style="width:200px;">>
             <input type="radio" id="openBarClassico" name="bebida">
             <label for="openBarClassico">Selecionar</label>
         </article>
-        <!-- Adicione mais opções de bebidas aqui -->
     </section>
-
     <footer>
         <p>Entre em contato para mais informações sobre o buffet.</p>
     </footer>
 </body>
-
 </html>
+
+
