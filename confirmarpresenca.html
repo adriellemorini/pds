@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cerimonialista - Confirmar Presença</title>
+    <style>
+        body {
+            background-color: #f0f0f0;
+            color: #000000;
+            border: 2px solid #000000;
+            margin: 10px;
+            padding: 10px;
+        }
+        h1 {
+            color: #ffc4e6;
+        }
+        p {
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Confirmar Presença</h1>
+    <p>Por favor, confirme sua presença no evento preenchendo o formulário abaixo:</p>
+    <form action="process_rsvp.php" method="post">
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="attendance">Presença:</label>
+        <input type="checkbox" id="attendance" name="attendance" value="confirmed"> Presença confirmada<br>
+        <input type="submit" value="Confirmar">
+    </form>
+</body>
+</html>
