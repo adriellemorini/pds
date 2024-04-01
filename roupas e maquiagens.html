@@ -17,7 +17,6 @@
         <option value="vestido6">Vestido Elegante curto</option>
     </select>
     <div id="imagem-vestido-feminino"></div>
-
     <h3>Trajes Masculinos</h3>
     <select id="ternos-masculinos" onchange="mostrarImagem(this.value, 'masculino')">
         <option value="">Selecione um Traje:</option>
@@ -26,7 +25,6 @@
         <option value="terno3">Terno Claro</option>
     </select>
     <div id="imagem-terno-masculino"></div>
-
     <script>
         function mostrarImagem(traje, genero) {
             var divImagem = genero === 'feminino' ? document.getElementById('imagem-vestido-feminino') : document.getElementById('imagem-terno-masculino');
@@ -57,12 +55,17 @@
                 }
             }
         }
+    
     </script>
     <h2>Escolha sua Maquiagem</h2>
     <label><input type="radio" name="maquiagem" value="simples"> Simples</label>
     <label><input type="radio" name="maquiagem" value="glamourosa"> Glamourosa</label>
     <label><input type="radio" name="maquiagem" value="natural"> Natural</label>
     <label><input type="radio" name="maquiagem" value="dramatica"> Dramática</label>
+    <footer>
+        <p>Entre em contato para mais informações</p>
+        <li><a href="Fale conosco.html">Fale conosco</a></li>
+    </footer>
 </body>
 </html>
 
